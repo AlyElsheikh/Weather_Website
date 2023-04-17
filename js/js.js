@@ -27,7 +27,7 @@ var cNDI;
 var cANDI;
 var countyData;
 async function connection (country){
-    var res = await fetch (`http://api.weatherapi.com/v1/forecast.json?key=a2fb0ad5cb894be388490317231504&q=${country}&days=3&aqi=yes&alerts=no`)
+    var res = await fetch (`https://api.weatherapi.com/v1/forecast.json?key=a2fb0ad5cb894be388490317231504&q=${country}&days=3&aqi=yes&alerts=no`)
     result = await res.json();
     currentData = result.current.temp_c;
     // nextData = result.forecast.forecastday[1].date;
