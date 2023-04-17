@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark py-5 container">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Live Cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="bg"></div>
+
+    <div class=" container position-relative">
+        <input id="serch" class="form-control mt-5 rounded-pill bg-dark text-light py-3" type="text">
+        <button class=" btn btn-info text-light py-3 px-5 rounded-pill serch-icon">Find</button>
+    </div>
+
+
+
+    <div class="container mt-5" id = "container">
+
+
+        <div class="row">
+
+            <div class="detals">
+                <div class="d-flex flex-wrap text-light">
+                    <div class="col-md-4 col-12">
+                        <div class="top detal-up1 p-3">
+                            <div class=" d-flex justify-content-between">
+                                <span>${day}</span>
+                                <span>${dayN}${month}</span>
+                            </div>
+                        </div>
+                        <div class="middle detal-middle1 p-3">
+                            <p>${locationData} ${countyData}</p>
+                            <div class=" d-flex align-items-center justify-content-between"">
+                                <h1 class="fw-bolder">${currentData}<sup>o</sup>C</h1>   <img class=" " src="${currentIcon}" alt="">
+                            </div>
+                            <div class="bottom mt-4 pb-3">
+                                <span>${condition}</span>
+                                <div class="d-flex justify-content-between my-3">
+                                    <div>${windD}%</div>
+                                    <div>${windKM}m/h</div>
+                                    <div>${windDir}</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="top detal-up1 detal-up2 p-3">
+                            <div class=" d-flex justify-content-between ">
+                                <span class="m-auto d-block">${nextDay}</span>
+                            </div>
+                        </div>
+                        <div class="middle detal-middle1 detal-middle2 p-3 text-center">
+                            <img src="${cNDI}" alt="">
+                            <h5 class="py-2">${nDW}<sup>o</sup>C</h5>
+                            <h6 class="py-2">${mNDW}<sup>o</sup></h6>
+                            <span class="py-2">${cND}</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="top detal-up1 p-3">
+                            <div class=" d-flex justify-content-between ">
+                                <span class="m-auto d-block">${AafterNDay}</span>
+                            </div>
+                        </div>
+                        <div class="middle detal-middle1 p-3 text-center">
+                            <img src="${cANDI}" alt="">
+                            <h5 class="py-2">${aNDW}<sup>o</sup>C</h5>
+                            <h6 class="py-2">${mANDW}<sup>o</sup></h6>
+                            <span class="py-2">${cAND}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
